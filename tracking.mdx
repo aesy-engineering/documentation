@@ -1,0 +1,34 @@
+---
+title: 'Tracking'
+description: 'Add analytics to all your experiences built in Root'
+---
+
+## Adding Google Tag Manager (GTM), Pixel Analytics & Redirect params
+
+<Steps>
+    <Step title="Go to shops tab">
+        Open shops from side bar and choose the shop to which you want to add
+    </Step>
+    <Step title="Click on edit shop">
+        Click on the edit icon on the shop card.
+        <img
+            className="block dark:hidden"
+            src="/images/add-tracking.png"
+            alt="Hero Light"
+        />
+        <img
+            className="hidden dark:block"
+            src="/images/add-tracking.png"
+            alt="Hero Dark"
+        />
+    </Step>
+     <Step title="Add the tracking details">
+        1. Add GTM tag, should look like `G-XXXXXX`
+        2. Add Pixel Analytics Tracking ID
+        3. Add redirect params, you can add more that one
+        <Note>
+        These are the params that will be sent when a user is redirected to the shop once they choose a product.
+        eg: If you want `?utm_source=reco_quiz&utm_campaign=toys`, you should put the string `utm_source:reco_quiz,utm_campaign:toys`
+        </Note>
+    </Step>
+</Steps>

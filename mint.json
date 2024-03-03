@@ -39,11 +39,16 @@
         "introduction",
         "quickstart"
       ]
+    },
+    {
+      "group": "Analytics",
+      "pages": [
+        "tracking"
+      ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/aesy-engineering",
+    "linkedin": "https://www.linkedin.com/company/rootfor-xyz"
   }
 }

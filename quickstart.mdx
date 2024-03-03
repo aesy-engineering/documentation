@@ -1,86 +1,98 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Build your first recommendation quiz in under 3 minutes'
 ---
+## Create your first recommendation quiz
 
-## Setup your development
+<Steps>
+  <Step title="Install Root shopify app">
+    Open the app to land on your Root dashboard
+    <img
+      className="block dark:hidden"
+      src="/images/root-dashboard.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/root-dashboard.png"
+      alt="Hero Dark"
+    />
+  </Step>
+  <Step title="Click on Shop from the side bar">
+    You should see your shopify shop on this page. Click on the shop card and navigate to the inner page, to find sync buttons
+  </Step>
+  <Step title="Sync products from your store">
+    Click 'Sync Products' button to your products from your shop to Root platform
+  </Step>
+  <Step title="Sync the products to AI">
+    Click 'Sync AI' button to make our AI learn about your products.
+    <Tip>Once AI sync is complete the  button should show 0 more. If not try syncing again, till it shows zero more</Tip>
+  </Step>
+  <Step title="Go to recommendations page">
+    Click on recommendations tab from the side-bar.
+    The recommendations page is where you can find all your products reccomendations. Click on `Create new recommendation` to get started
+  </Step>
+  <Step title="Create your first recommendation quiz">
+    Here are the steps to create your first quiz.
+    1. Choose the shop from the drop down
+    2. Enter a prompt to help AI understand what kind of quiz you want to create. eg "Fetch the toys that are best for 10-year and create a quiz for them to choose the right product for them "
+    3. Press "Generate new recommendation", and wait for the recommendation graph to appear
+    4. Use the fine tuning prompt to fine tune your quiz with the help of AI. eg: "Change the question which asks about budget and add a question about color preference"
+    5. Give a `name` to the quiz & a good background image
+    6. Give a great `title` that will appear in the front page of your quiz eg: "Find the right toy for you !"
+    7. Change the theme by changing the primary, secondary & background color, to fit your brands identity
+    8. Press `Create`. You should see the quiz created and a preview appears on the page.
+  </Step>
+</Steps>
 
-Learn how to update your docs locally and and deploy them to the public.
+<img
+  className="block dark:hidden"
+  src="/images/root-quiz-created.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/root-quiz-created.png"
+  alt="Hero Dark"
+/>
 
-### Edit and preview
+## Add the quiz to your shop
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
+<Steps>
+  <Step title="Open the shopify admin panel">
+    Go to shopify admin panel for your store, and click on `Online Store > Themes` > `Customize`
+  </Step>
+  <Step title="Choose the page and add app block">
+    Navigate to the page where you wanna add the quiz & add the product Recommendation app block by Root, by using `+ Add Block`
+  </Step>
+  <Step title="Configure the BusinessId & RecommendationId">
+    On the right side pannel, you will be asked to add `BusinessId` & `RecommendationId`, copy the same from the quiz page.
+    <img
+      className="block dark:hidden"
+      src="/images/copy-sample.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/copy-sample.png"
+      alt="Hero Dark"
+    />
+  </Step>
+  <Step title="Save">
+    Save the changes and check your shop website to see the quiz in action
+  </Step>
+</Steps>
 
-### Deploy your changes
+## Next Steps
 
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
+<CardGroup cols={2}>
+  <Card
+    title="Tracking"
+    icon="stars"
+    href="/quickstart"
+  >
+    Add Google Tag Manager & Pixel Analytics Tracking
+  </Card>
 </CardGroup>
+
+
