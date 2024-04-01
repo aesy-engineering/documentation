@@ -38,7 +38,8 @@
       "pages": [
         "introduction",
         "quickstart",
-        "hero-banner"
+        "hero-banner",
+        "cart-nudge"
       ]
     },
     {

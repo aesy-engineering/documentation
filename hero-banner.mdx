@@ -79,5 +79,85 @@ this feature enables brands to craft personalized experiences that resonate with
 
 
 
+## Add the hero banner to your shop
+
+<Steps>
+  <Step title="Open the shopify admin panel">
+    Go to shopify admin panel for your store, and click on `Online Store > Themes` > `Customize`
+  </Step>
+  <Step title="Enable Root Pixel App Embed Block">
+    On the side bar click on app embeds to find `Root Pixel` in the embed list. 
+    Click on the same and add businessId, then enable the same. This is an important step 
+    to enable analytics and track your user journey.
+    <img
+      className="block dark:hidden"
+      src="/images/app-embed-block.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/app-embed-block.png"
+      alt="Hero Dark"
+    />
+
+  </Step>
+  <Step title="Choose the page and add app block">
+    Navigate to the page where you wanna add the quiz & add the Hero Banner block by Root, by using `+ Add Block`
+  </Step>
+  <Step title="Configure the BusinessId & EntityId">
+    On the right side pannel, you will be asked to add `BusinessId` & `RecommendationId`, copy the same from the banner page.
+    <img
+      className="block dark:hidden"
+      src="/images/hero-banner.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/hero-banner.png"
+      alt="Hero Dark"
+    />
+  </Step>
+  <Step title="Adjust Duration">
+    Adjust the duration to adjust the time between switching of banner images.
+    <img
+      className="block dark:hidden"
+      src="/images/hero-banner-block.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/hero-banner-block.png"
+      alt="Hero Dark"
+    />
+  </Step>
+  <Step title="Save">
+    Save the changes and check your shop website to see the quiz in action
+  </Step>
+</Steps>
+
+<CardGroup cols={2}>
+  <Card
+    title="Tracking"
+    icon="chart-mixed"
+    href="/tracking"
+  >
+    Add Google Tag Manager & Pixel Analytics Tracking
+  </Card>
+   <Card
+    title="Product Recommendation Quiz"
+    icon="chart-mixed"
+    href="/quick-start"
+  >
+    Product Recommendation Quiz
+  </Card>
+  <Card
+    title="Personalized Nudge (Beta)"
+    icon="chart-mixed"
+    href="/cart-nudge"
+  >
+    Personlised Nudges
+  </Card>
+</CardGroup>
+
 
 

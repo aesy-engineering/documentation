@@ -1,0 +1,91 @@
+---
+title: 'Cart Abandonment Nudge'
+description: 'Configure Cart Abandonement'
+---
+
+<Warning>This feature is in beta, and is under active development. Please expect limited functionalities until fully production ready</Warning>
+
+## Whats a cart Abandonement Nudge ?
+
+This feature allows you to show a nudge to the user to help them comvert immediately if there is a chance of cart abadonment. 
+Root AI uses users browsing patterns and nudges the user at the right time by giving them an offer.
+
+<Steps>
+  <Step title="Install Root Shopify App & Open the same">
+    Navigate to widgets tab on the sidebar
+  </Step>
+  <Step title="Open Widgets -> Personalized Nudge">
+    On this page you can see all the nudges that where created, click on `Create new` to create a new one.
+  </Step>
+   <Step title="Enter the details">
+    1. Give a name and select the shop to which the nudge is created.
+    2. Get a offer coupon created in shopify and paste it in the coupon code field.
+    3. Customise your nudge by giving nudge details like offer code text etc
+    4. Configure the timing and other details, and save
+  </Step>
+</Steps>
+
+## Add the nudges to your shop
+
+<Steps>
+  <Step title="Open the shopify admin panel">
+    Go to shopify admin panel for your store, and click on `Online Store > Themes` > `Customize`
+  </Step>
+  <Step title="Enable Root Pixel App Embed Block">
+    On the side bar click on app embeds to find `Root Pixel` in the embed list. 
+    Click on the same and add businessId, then enable the same. This is an important step 
+    to enable analytics and track your user journey.
+    <img
+      className="block dark:hidden"
+      src="/images/app-embed-block.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/app-embed-block.png"
+      alt="Hero Dark"
+    />
+
+  </Step>
+  <Step title="Enable Root Personlisation Nudge App Embed Block">
+    On the side bar click on app embeds to find `Root Personalized Nudges` in the embed list. 
+    Click on the same and add entity id of the nudge, then enable the same.
+    <img
+      className="block dark:hidden"
+      src="/images/enable-nudge.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/enable-nudge.png"
+      alt="Hero Dark"
+    />
+    <Tip>Disable this app embed to disable the nudge</Tip>
+  </Step>
+</Steps>
+
+<Note>You can check if the nudge is working by adding an item to your cart and then trying to, keep shoping without finishing the transaction</Note>
+
+<CardGroup cols={2}>
+  <Card
+    title="Tracking"
+    icon="chart-mixed"
+    href="/tracking"
+  >
+    Add Google Tag Manager & Pixel Analytics Tracking
+  </Card>
+  <Card
+    title="Product Recommendation Quiz"
+    icon="chart-mixed"
+    href="/quickstart"
+  >
+    Product Recommendation Quiz
+  </Card>
+   <Card
+    title="Dynamic Hero Banner (Beta)"
+    icon="chart-mixed"
+    href="/hero-banner"
+  >
+    Add dynamic hero banner
+  </Card>
+</CardGroup>
