@@ -1,0 +1,83 @@
+---
+title: 'Dynamic Hero Banner'
+description: 'Build your dynamic Hero Banner'
+---
+<Warning>This feature is in beta, and is under active development. Please expect limited functionalities until fully production ready</Warning>
+## Whats a dynamic hero banner ?
+
+The Dynamic Hero Banner feature revolutionizes the customization landscape for ecommerce and online brands, 
+offering a dynamic and tailored approach to engaging users on landing pages. 
+Leveraging sophisticated segmentation based on user properties like device types, geographic location, browsing patterns, and historical product affinity, 
+this feature enables brands to craft personalized experiences that resonate with individual visitors. By harnessing the power of GenAI, the feature generates bespoke variations of hero banners in real-time, ensuring that each user encounters content that is not only visually compelling but also contextually relevant. 
+
+## Create a default banner
+
+<Steps>
+  <Step title="Install Root Shopify App & Open the same">
+    Navigate to widgets tab on the sidebar
+  </Step>
+  <Step title="Open Widgets -> Hero Banner">
+    On this page you can see all the hero banners that where created, click on `Create new`
+  </Step>
+  <Step title="Choose the shop and give the banner a name">
+   Choose the shop to which the banner is going to be associated with and give a name (for your reference)
+  </Step>
+  <Step title="Upload a desktop & mobile version of images">
+   Upload a desktop and mobile image for the banner
+  </Step>
+  <Step title="Enter the banner details">
+    1. Enter title and subtitle of the banner, these are optional fields
+    2. Optionally you can give a background color to the title and subtitle which, and also change the font
+    3. Primary CTA is the text for the primary button that will appear on the banner. The link will be where that button is going to redirect to
+    4. Fill color and text color is that of the primary CTA
+    6. Similarly you can also customized secondary CTA.
+    7. Position is the position where the text and CTA should appear on the banner
+    <Tip>Most of the fields except primary CTA link are optional</Tip>
+  </Step>
+  <Step title="Click + Add Banner to create more images in the slideshows">
+   You can have multiple images in the banner, which rotate on a configured period of time.
+  </Step>
+  <Step title="Save">
+    Save the changes and see the preview of the banner, click on edit to edit anything
+  </Step>
+</Steps>
+
+## Create banners for different segments
+
+<Steps>
+  <Step title="Create Segments if not already created">
+    Segments the users based on different set of user properties for the users visiting your store.
+    1. Click on `Create` button to create a new segment
+    2. Name your segment, provide a description of what the segment is for, and select the user properties.
+     eg: To create a segment of users who are iphone users from tier 1 city, select Operating system as iphone and location as tier 1
+    <Warning>Feature to import your existing segments & create more diverse segments is in development</Warning>
+    3. Click on `Create` to create the segment
+  </Step>
+  <Step title="Open an exiting default banner">
+    Open a existing default banner and click on `Create Variant`
+  </Step>
+  <Step title="Select variant details">
+    Give a the variant a name if you want to, and select a segment, you want to create variant for. 
+  </Step>
+  <Step title="Generate Variant">
+    Click on `Generate Variant` button to generate variant using AI. Edit the generated variant details. You can change everything from images to title to text.
+  </Step>
+  <Step>
+    Click `Save` to save the variant, and preview the variant by changing the preview dropdown.
+    <img
+      className="block dark:hidden"
+      src="/images/variant-preview.png"
+      alt="Hero Light"
+    />
+    <img
+      className="hidden dark:block"
+      src="/images/variant-preview.png"
+      alt="Hero Dark"
+    />
+  </Step>
+</Steps>
+
+
+
+
+
